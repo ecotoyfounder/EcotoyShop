@@ -32,7 +32,7 @@ const routes: Routes = [
       {path: ":id", component: UserEditComponent}
     ]},
   {path: "admin", component: AdminComponent, canActivate: [AuthGuard], children: [
-      {path: "goods/:id", component: GoodEditComponent}
+      {path: "goods/:id/edit", component: GoodEditComponent}
     ]},
   {path: "cart", component: CartComponent},
   {path: "shop", component: ShopComponent},
